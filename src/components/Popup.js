@@ -7,7 +7,7 @@ function Popup(props){
         <div className="popup">
             <div className= "popup-inner">
              <h2>Magic cat</h2>
-             <p>You found a lost wizard cat! Congratulations!!!</p>
+             <p>You found the lost wizard cat! Congratulations!!!</p>
 
             <img src={WizardCat} alt="cat"/>
             <br></br>
