@@ -10,3 +10,17 @@
   color: white;
 }
 
+.App button{
+  background-color: rgba(249, 0, 0, 0.278);
+  border-radius: 20px;
+  border-width: 2;
+  border-color: #ff0000;
+  width: flex;
+  color: #ff0000;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+}
+
