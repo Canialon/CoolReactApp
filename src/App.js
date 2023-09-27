@@ -1,18 +1,17 @@
-import { useState } from 'react';
+import React from 'react';
 import './App.css';
-import Popup from './components/Popup';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import MainContent from './components/MainContent';
+import Menu from './components/Menu';
 
 function App() {
-  const [buttonPopup, setButtonPopup] = useState(false);
-
   return (
     <div className="App">
-      <main>
-          <h1>Hello, Stoiev!</h1>
-          <button onClick={() => setButtonPopup(true)}>Press this button to see magic!</button>
-      </main>
-      <Popup trigger={buttonPopup} setTrigger={setButtonPopup}></Popup>
-        
+      <Header />
+      <Menu />
+      <MainContent />
+      <Footer />
     </div>
   );
 }
