@@ -1,16 +1,21 @@
 import React from 'react';
 
-function MainContent({ products }) {
+function MainContent({ products, onCheckboxChange }) {
   return (
     <div className="main-content">
       <h2>Item list:</h2>
-      <ul>
-        {products.map((product) => (
-          <li key={product.id}>
-            <p>{product.name}</p>
-          </li>
-        ))}
-      </ul>
+      {products.map((product) => (
+        <div key={product.id}>
+          <label className="checkbox-label">
+            <input
+              type="checkbox"
+              checked={product.selected}
+              onChange={() => onCheckboxChange(product.id)}
+            />
+            {product.name}
+          </label>
+        </div>
+      ))}
     </div>
   );
 }
